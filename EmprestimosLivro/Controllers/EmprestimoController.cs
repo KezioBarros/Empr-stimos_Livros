@@ -17,5 +17,82 @@ namespace EmprestimosLivro.Controllers
             IEnumerable<EmprestimosModels> emprestimos = _db.Emprestimos;
             return View(emprestimos);
         }
+
+        [HttpGet]
+        public IActionResult Cadastrar()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult Editar(int? id)
+        {
+            if(id == null || id == 0)
+            {
+                return NotFound();
+            }
+
+            EmprestimosModels emprestimo = _db.Emprestimos.FirstOrDefault(x => x.Id == id);
+
+            if(emprestimo == null)
+            {
+                return NotFound();
+            }
+            return View(emprestimo);
+        }
+
+        [HttpGet]
+        public IActionResult Excluir(int id)
+        {
+            if(id == null || id == 0)
+            {
+                return NotFound();
+            }
+
+            EmprestimosModels emprestimo = _db.Emprestimos.FirstOrDefault(x => x.Id == id);
+            if(emprestimo == null)
+            {
+                return NotFound();
+            }
+            return View(emprestimo);
+        }
+
+        [HttpPost]
+        public IActionResult Cadastrar(EmprestimosModels emprestimos)
+        {
+           if(ModelState.IsValid)
+            {
+                _db.Emprestimos.Add(emprestimos);
+                _db.SaveChanges();
+                return RedirectToAction();
+            }
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Editar(EmprestimosModels emprestimo)
+        {
+            if(ModelState.IsValid)
+            {
+                _db.Emprestimos.Update(emprestimo);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(emprestimo);
+        }
+
+        [HttpPost]
+        public IActionResult Excluir(EmprestimosModels emprestimo)
+        {
+            if(emprestimo == null)
+            {
+                return NotFound();
+            }
+
+            _db.Emprestimos.Remove(emprestimo);
+            _db.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
     }
 }
