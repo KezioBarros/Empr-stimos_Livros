@@ -5,6 +5,14 @@
         <h1>Empréstimos</h1>
         <a class="btn btn-success mx-2" asp-controller="Emprestimo" asp-action="Cadastrar"><i class="bi bi-file-earmark-plus mx-2"></i>Cadastra novo empréstimo</a>
     </div>
+
+    @if (TempData["MensagemSucesso"] != null)
+    {
+        <div class="alert alert-success text-light" role="alert">
+            @TempData["MensagemSucesso"]
+        </div>
+    }
+
     <table id="Emprestimos" class="table table-light table-hover mt-5">
         <thead>
             <tr>
