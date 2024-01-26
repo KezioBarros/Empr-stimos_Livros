@@ -64,3 +64,10 @@ C:\temp\Projetos\EmprestimosLivro\EmprestimosLivro\obj\Debug\net6.0\refint\Empre
 C:\temp\Projetos\EmprestimosLivro\EmprestimosLivro\obj\Debug\net6.0\EmprestimosLivro.pdb
 C:\temp\Projetos\EmprestimosLivro\EmprestimosLivro\obj\Debug\net6.0\EmprestimosLivro.genruntimeconfig.cache
 C:\temp\Projetos\EmprestimosLivro\EmprestimosLivro\obj\Debug\net6.0\ref\EmprestimosLivro.dll
+C:\temp\Projetos\EmprestimosLivro\EmprestimosLivro\bin\Debug\net6.0\ClosedXML.dll
+C:\temp\Projetos\EmprestimosLivro\EmprestimosLivro\bin\Debug\net6.0\DocumentFormat.OpenXml.dll
+C:\temp\Projetos\EmprestimosLivro\EmprestimosLivro\bin\Debug\net6.0\ExcelNumberFormat.dll
+C:\temp\Projetos\EmprestimosLivro\EmprestimosLivro\bin\Debug\net6.0\Irony.dll
+C:\temp\Projetos\EmprestimosLivro\EmprestimosLivro\bin\Debug\net6.0\SixLabors.Fonts.dll
+C:\temp\Projetos\EmprestimosLivro\EmprestimosLivro\bin\Debug\net6.0\System.IO.Packaging.dll
+C:\temp\Projetos\EmprestimosLivro\EmprestimosLivro\bin\Debug\net6.0\XLParser.dll

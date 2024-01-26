@@ -14,7 +14,7 @@ namespace EmprestimosLivro.Models
 
         [Required(ErrorMessage = "Digite o nome do Livro!")]
         public string LivroEmprestado { get; set; }
-        public DateTime DataUtimaAtualizacao { get; set; } = DateTime.Now;
+        public DateTime DataUtimaAtualizacao { get; set; }
 
 
     }

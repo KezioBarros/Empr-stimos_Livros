@@ -3,7 +3,7 @@
         language:
         {
             "decimal": "",
-            "emptyTable": "No data available in table",
+            "emptyTable": "Não tem dados na tabela",
             "info": "Mostrando _START_ registro de _END_ em um total de _TOTAL_ entradas",
             "infoEmpty": "Showing 0 to 0 of 0 entries",
             "infoFiltered": "(filtered from _MAX_ total entries)",
